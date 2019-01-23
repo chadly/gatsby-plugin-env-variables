@@ -1,0 +1,33 @@
+{
+  "name": "gatsby-plugin-env-variables",
+  "version": "1.0.0",
+  "description": "Gatsby plugin to whitelist system environment variables to be made available to client-side scripts",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "environment variables",
+    "env variables"
+  ],
+  "author": "Chad Lee <npm@chadly.net>",
+  "license": "MIT",
+  "main": "gatsby-node.js",
+  "scripts": {
+    "compile": "rimraf lib && babel src -d lib && copyfiles package.json .npmrc lib",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chadly/gatsby-plugin-env-variables.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "copyfiles": "^2.1.0",
+    "eslint": "^5.12.0",
+    "eslint-config-civicsource": "^10.0.0",
+    "prettier": "^1.15.3",
+    "rimraf": "2.x"
+  }
+}
