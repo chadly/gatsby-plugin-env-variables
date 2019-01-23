@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-env-variables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gatsby plugin to whitelist system environment variables to be made available to client-side scripts",
   "keywords": [
     "gatsby",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "main": "gatsby-node.js",
   "scripts": {
-    "compile": "rimraf lib && babel src -d lib && copyfiles package.json .npmrc lib",
+    "compile": "rimraf lib && babel src -d lib && copyfiles package.json README.md lib",
     "lint": "eslint src"
   },
   "repository": {
