@@ -7,12 +7,6 @@ By default, Gatsby only makes system environment variables [prefixed with `GATSB
 ## Install
 
 ```
-yarn add gatsby-plugin-env-variables
-```
-
-or
-
-```
 npm install gatsby-plugin-env-variables
 ```
 
