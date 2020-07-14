@@ -16,7 +16,7 @@ jobs:
       uses: actions/cache@v2
       with:
         path: '**/node_modules'
-        key: ${{ runner.os }}-deps-${{ hashFiles('yarn.lock') }}
+        key: ${{ runner.os }}-deps-${{ hashFiles('package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-deps-
 
