@@ -1,10 +1,10 @@
 exports.onCreateWebpackConfig = ({ actions, plugins }, options) => {
-	const { whitelist } = options || {};
+	const { allowList } = options || {};
 
-	if (!whitelist) return;
+	if (!allowList) return;
 
 	const varobj = Object.keys(process.env).reduce((acc, key) => {
-		if (whitelist.indexOf(key) >= 0) {
+		if (allowList.indexOf(key) >= 0) {
 			acc[`process.env.${key}`] = JSON.stringify(process.env[key]);
 		}
 		return acc;

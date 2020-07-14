@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-env-variables",
-  "version": "1.0.2",
-  "description": "Gatsby plugin to whitelist system environment variables to be made available to client-side scripts",
+  "version": "2.0.0",
+  "description": "Gatsby plugin to allow system environment variables to be made available to client-side scripts",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
