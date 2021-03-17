@@ -1,5 +1,11 @@
 exports.onCreateWebpackConfig = ({ actions, plugins }, options) => {
-	const { allowList } = options || {};
+	const { allowList, whitelist } = options || {};
+
+	if (whitelist) {
+		throw new Error(
+			"Please update your gatsby-config and replace whitelist with allowList"
+		);
+	}
 
 	if (!allowList) return;
 
