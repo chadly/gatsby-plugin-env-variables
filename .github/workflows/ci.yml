@@ -2,8 +2,8 @@ name: CI
 on: push
 
 jobs:
-  lint:
-    name: Lint
+  linttest:
+    name: Lint & Test
     runs-on: ubuntu-latest
 
     steps:
@@ -24,3 +24,4 @@ jobs:
       run: npm i
 
     - run: npm run lint
+    - run: npm test
