@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-env-variables",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Gatsby plugin to allow system environment variables to be made available to client-side scripts",
   "keywords": [
     "gatsby",
